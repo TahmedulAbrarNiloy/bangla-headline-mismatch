@@ -23,3 +23,9 @@ bangla-headline-mismatch/
 └── scripts/
 ├── preprocessing.py # Data cleaning, TF-IDF
 └── baseline_model.py # First model training and testing
+
+## Project Status
+
+✅ Basic pipeline complete (preprocessing, TF-IDF, logistic regression)  
+✅ Prediction script and model saving done  
+🔜 Expanding dataset and adding transformer models  

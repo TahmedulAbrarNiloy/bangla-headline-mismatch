@@ -16,4 +16,17 @@
 - Fixed file path issues and verified proper data loading.
 - Faced package installation errors (e.g., gensim, scipy) — decided to switch to Anaconda for smoother setup.
 
+### May 10, 2025
+- Split dataset into training and testing sets using train_test_split with random_state=42.
+
+- Trained a Logistic Regression model on TF-IDF features.
+
+- Evaluated the model with a classification report (accuracy: 40% on a 5-sample test set).
+
+- Saved trained model and vectorizer to models/model.pkl and models/vectorizer.pkl.
+
+- Created an inference script predict.py that loads the model and predicts match/mismatch on new input.
+
+- Verified working prediction with sample input.
+
 
