@@ -9,6 +9,9 @@ os.makedirs("data/features", exist_ok=True)
 # Load cleaned dataset
 df = pd.read_csv("data/cleaned_dataset.csv")
 
+# ✅ Drop rows with missing values
+df = df.dropna(subset=["clean_headline", "clean_body"]).reset_index(drop=True)
+
 # TF-IDF Vectorizer for headlines and body text
 tfidf_headline = TfidfVectorizer()
 tfidf_body = TfidfVectorizer()
